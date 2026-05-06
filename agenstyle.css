@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #d9e6ee;
+}
+.carrossel {
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    text-align: center;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slides img {
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+header {
+    background-color: #5875B7;
+    color: white; 
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    margin-left: 10px;
+}
+header p {
+    margin-top: 10px;
+}
+h2 {
+    text-align: center;
+    padding: 30px;
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardpag {
+    background-color:#D8DEED;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 200px;
+    margin-bottom: 200px;
+}
+.cardpag img{
+    width: 200px;
+    height: 150px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+button {
+    background-color: #5875B7;
+    color: white;
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    border: #5875B7;
+    margin-top: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background-color: #5875B7;
+    color: white;
+    width: 100%;
+    height: 100px;
+}
+footer p {
+    text-align: center;  
+    margin-top: 40px;
+}

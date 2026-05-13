@@ -3,44 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Banco DEV SESI </title>
-    <link rel="stylesheet" href="/estilo.css">
+    <title> Agência de Turismo </title>
+    <link rel="stylesheet" href="/agenstyle.css" ></link>
 </head>
 <body>
-    <div id="welcome" class="container">
-        <div id="welcome2" class="card">
-        <h1> DEV BANCO SESI </h1>
-        <p> Seja bem vindo ao nosso banco! </p>
-        <p> Para começarmos, qual o seu saldo inicial? </p> 
-    </div>
-        <input type="number" id="saldoInput" placeholder="Ex: 5.000">
-        <br>
-        <button id="botaoIniciarConta" onclick="criarConta()"> Iniciar minha conta </button>
-    </div>
+    <header>
+        <h1> ViajeMais </h1>
+        <p> Agência de turismo para viagens no litoral de São Paulo! </p>
+    </header>
 
-
-    <div id="bemvindo" class="container hidden">
-        <main class="card">
-        <div id="bemvindo2" class="balance">
-        <h1> DEV BANCO SESI </h1>
-        <p> Saldo em conta: </p>
-        <h2 id="saldo"> R$0,00</h2>
-        <button id="btn-olho" onclick="togglePrivacidade()">👁️</button> </div>
-    
-    <div>
-        <input type="number" id="operacao" placeholder="Ex: 5.000">
-        <br>
-        <button id="botaoDep" onclick="operacao('deposito')"> Depositar </button>
-        <button id="botaoPag" onclick="operacao('saque')"> Pagar no PIX </button>
+     <div class="carrossel">
+        <div class="slides">
+            <img src="UBATUBA.jpg" alt="Ubatuba">
+            <img src="caragua.jpg" alt="Caraguá">
+            <img src="ilhabela.jpg" alt="Ilhabela">
+        </div>
+     <button id="esquerda" class="esquerda"> <- </button> <button class="esquerda" id="direita"> -> </button>
     </div>
-</div>
-</main>
+     <h2> Somos uma agência de turismo voltada às principais praias do Litoral Norte! Cobrimos a oferta de qualquer concorrência!</h2>
 
-    <div id="atvsrecentes" class="log">
-        <h2>Atividades recentes </h2>
-        <ul id="lista"></ul>
-        <li></li>
-    </div>
-   <script src="script.js"></script>
+     <h1> Viagens disponíveis </h1>
+     <div class="card">
+        <div class="cardpag">
+            <h2> Ubatuba </h2>
+            <img src="ubatubacard.jpg" alt="Ubatuba">
+            <p> Horário de saída da rodoviária de São José dos Campos: 10:00 </p>
+            <p> Horário de chegada na rodoviária de Ubatuba: 13:00 </p>
+            <p> Duração de viagem: 3h </p>
+            <button id="botaouba"> Reservar </button>
+        </div>
+        <div class="cardpag">
+            <h2> Caraguá </h2>
+            <img src="caraguacard.jpg" alt="Caragua">
+            <p> Horário de saída da rodoviária de São José dos Campos: 10:00 </p>
+            <p> Horário de chegada na rodoviária de Caraguá: 11:00 </p>
+            <p> Duração de viagem: 1h </p>
+            <button id="botaocara"> Reservar </button>
+        </div>
+         <div class="cardpag">
+            <h2> Ilhabela </h2>
+            <img src="ilhabelacard.jpg" alt="Ilhabela">
+            <p> Horário de saída da rodoviária de São José dos Campos: 10:00 </p>
+            <p> Horário de chegada na rodoviária de Ilhabela: 14:30 </p>
+            <p> Duração de viagem: 4h30m </p>
+            <button id="botaoilha"> Reservar </button>
+        </div>
+     </div>
+
+     <footer>
+        <p> &copy; Todos os direitos reservados. Trabalho feito por Sophia Medeiros dos Santos </p>
+     </footer>
+     <script src="agenscript.js"></script>
 </body>
 </html>

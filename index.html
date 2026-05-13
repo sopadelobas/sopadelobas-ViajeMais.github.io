@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Banco DEV SESI </title>
+    <link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+    <div id="welcome" class="container">
+        <div id="welcome2" class="card">
+        <h1> DEV BANCO SESI </h1>
+        <p> Seja bem vindo ao nosso banco! </p>
+        <p> Para começarmos, qual o seu saldo inicial? </p> 
+    </div>
+        <input type="number" id="saldoInput" placeholder="Ex: 5.000">
+        <br>
+        <button id="botaoIniciarConta" onclick="criarConta()"> Iniciar minha conta </button>
+    </div>
+
+
+    <div id="bemvindo" class="container hidden">
+        <main class="card">
+        <div id="bemvindo2" class="balance">
+        <h1> DEV BANCO SESI </h1>
+        <p> Saldo em conta: </p>
+        <h2 id="saldo"> R$0,00</h2>
+        <button id="btn-olho" onclick="togglePrivacidade()">👁️</button> </div>
+    
+    <div>
+        <input type="number" id="operacao" placeholder="Ex: 5.000">
+        <br>
+        <button id="botaoDep" onclick="operacao('deposito')"> Depositar </button>
+        <button id="botaoPag" onclick="operacao('saque')"> Pagar no PIX </button>
+    </div>
+</div>
+</main>
+
+    <div id="atvsrecentes" class="log">
+        <h2>Atividades recentes </h2>
+        <ul id="lista"></ul>
+        <li></li>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
